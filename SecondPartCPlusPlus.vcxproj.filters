@@ -39,5 +39,11 @@
     <ClCompile Include="Task5.cpp">
       <Filter>Исходные файлы\5.3.10</Filter>
     </ClCompile>
+    <ClCompile Include="Task6.cpp">
+      <Filter>Исходные файлы\5.3.10</Filter>
+    </ClCompile>
+    <ClCompile Include="Task7.cpp">
+      <Filter>Исходные файлы\5.3.10</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
