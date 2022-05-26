@@ -1,4 +1,3 @@
 ﻿  SecondPartCPlusPlus.cpp
-  Task7.cpp
-  Создание кода...
+C:\Users\PC\Documents\GitHub\SecondPartCPlusPlus\Task9.cpp(43): warning C4715: Man::Check: значение возвращается не при всех путях выполнения
   SecondPartCPlusPlus.vcxproj -> C:\Users\PC\Documents\GitHub\SecondPartCPlusPlus\x64\Debug\SecondPartCPlusPlus.exe

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ public:
     
     void printStatus()
     {
-        cout << "Flight [" << id << "] : [" << reserved << "]/[" << capacity << "] ([" << ((reserved * 1.0) / (capacity * 1.0)) * 100.0 << "]%) seats taken";
+        cout << "Flight [" << id << "] : [" << reserved << "]/[" << capacity << "] ([" << floor(((reserved * 1.0) / (capacity * 1.0)) * 100.0) << "]%) seats taken";
     }
 
 private:

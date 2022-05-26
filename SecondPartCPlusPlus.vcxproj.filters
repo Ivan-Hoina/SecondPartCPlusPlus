@@ -19,6 +19,15 @@
     <Filter Include="Исходные файлы\5.3.10">
       <UniqueIdentifier>{6c06dcde-96bc-43d0-837a-2589de3c4bae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\6.3.5">
+      <UniqueIdentifier>{9e2ec679-ee60-4e29-9509-4a8a46ab58a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\6.3.6">
+      <UniqueIdentifier>{317f4163-6f89-42a7-b690-81d9ea7f666b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\6.3.7">
+      <UniqueIdentifier>{9c3562fb-8dee-4645-b64b-b0bb6aa3f4ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SecondPartCPlusPlus.cpp">
@@ -44,6 +53,15 @@
     </ClCompile>
     <ClCompile Include="Task7.cpp">
       <Filter>Исходные файлы\5.3.10</Filter>
+    </ClCompile>
+    <ClCompile Include="Task8.cpp">
+      <Filter>Исходные файлы\6.3.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Task9.cpp">
+      <Filter>Исходные файлы\6.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="Task10.cpp">
+      <Filter>Исходные файлы\6.3.7</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

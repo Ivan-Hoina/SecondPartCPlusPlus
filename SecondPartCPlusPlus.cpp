@@ -7,18 +7,34 @@
 #include "Task5.cpp"
 #include "Task6.cpp"
 #include "Task7.cpp"
+#include "Task8.cpp"
+#include "Task9.cpp"
+#include "Task10.cpp"
 
 using namespace std;
+
+//5.1.9
 
 int Part5Section1Task1();
 int Part5Section1Task2();
 int Part5Section1Task3();
 int Part5Section1Task4();
 
+//5.3.10
+
 int Part5Section3Task1();
 int Part5Section3Task2();
 int Part5Section3Task3();
 
+//6.3.5
+int Part6Section3Task5();
+
+//6.3.6
+int Part6Section3Task6();
+
+//6.3.7
+
+int Part6Section3Task7();
 
 int main()
 {
@@ -41,11 +57,19 @@ int main()
     //return Part5Section3Task2();
     
     // 5.3.10(3)
-    return Part5Section3Task3();
+    //return Part5Section3Task3();
+
+    // 6.3.5
+    //return Part6Section3Task5();
+
+    // 6.3.6
+    //return Part6Section3Task6();
+
+    // 6.3.7
+    return Part6Section3Task7();
 }
 
 //5.1.9
-
 int Part5Section1Task1()
 {
     Person person;
@@ -240,5 +264,50 @@ int Part5Section3Task3() {
             manager.status(id);
         }
     }
+    return 0;
+}
+
+//6.3.5
+
+int Part6Section3Task5() {
+
+    Drawer *drawers[3];
+    drawers[0] = new Oak();
+    drawers[1] = new Apple();
+    drawers[2] = new Orange();
+    
+    for (int i = 0; i < 3; i++)
+        drawers[i]->Draw();
+
+    return 0;
+}
+
+//6.3.6
+int Part6Section3Task6() {
+    
+    Piece *king = new King("King");
+    Piece *man = new Man("Man");
+    
+    cout << (king->Check(0, 0, 0, 1) ? "true" : "false") << '\n';
+    cout << (man->Check(0, 0, 0, 1) ? "true" : "false") << '\n';
+    cout << (man->Check(0, 0, 1, 1) ? "true" : "false") << '\n';
+
+    return 0;
+}
+
+//6.3.7
+int Part6Section3Task7() {
+    IPAddress ip = IPAddress(5, 25, 120, 250);
+    IPAddressChecker checker = IPAddressChecker(&ip);    
+    checker.Print();
+    
+    ip = IPAddress(5, 25, 120, 256);
+    checker = IPAddressChecker(&ip);    
+    checker.Print();
+    
+    ip = IPAddress(5, -1, 120, 250);
+    checker = IPAddressChecker(&ip);    
+    checker.Print();
+
     return 0;
 }
